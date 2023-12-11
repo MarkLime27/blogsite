@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Asashi Blogs</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="css/blogstyle.css">
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <!-- Slick Carousel Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+          <h1 class="logo-text"><span>ASAHI'S</span> MUSIC ANIME AND MANGA REVIEWS</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+    </header>
+
+
+    <div class='story'>
+
+      <img src='images/logo.png' class='logo-img'>
+      <h3 class='byline'>Mark L. Dela Cruz</h3>
+        <h1 class = 'blog-title'>Three Days of Happiness Manga Review</h1>
+
+
+        <h2>“Would you sell your lifespan if you knew you wouldn’t do anything important with it?”</h2>
+        <p>That is what the protagonist of Sugaru Miaki’s Three Days of Happiness or I sold my life for ten thousand yen per year, accomplishes. 
+        A 20-year-old broke college student named Kusunoki finds out about a store that trades in time, health, and lifespans. 
+        Kusunoki chooses to investigate this enigmatic shop after selling the last of his joy-inducing belongings in order to pay for food and lodging. 
+        Kusunoki always thought he was destined to be somebody significant. 
+        In light of this, he estimates that if he sells 30 of the 60 years, he believes he has left to live, he should receive a sizeable quantity of money..</p>
+
+        <p>Kusunoki learns to his dismay that he has only 30 more years to live, and in those years, he has a wretched existence, making each year worth 10,000 yen, or roughly 4000 pesos, in today’s money. 
+        Kusunoki makes the decision to sell the remaining years minus three months after learning how little his life is worth. 
+        He is given a monitor he can only see to keep an eye on him because he has less than a year left and must be careful not to harm anyone. 
+        Up until his last three days of life, when he gets to live alone in privacy, his monitor will stay with him. </p>
+
+        <img src = 'images/image_8.png' class = image >
+        <h2>“Though there’s no use loving someone who’s soon to go away”</h2>>  
+    </div>
+
+    <!-- // Page Wrapper -->
+
+
+
+
+  
+  
+    <!-- Simple JS animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.0.1/classic/ckeditor.js"></script>
+  
+    <script>
+      $(document).ready(function () {
+        // Toggle menu
+        $(".menu-toggle").on("click", function () {
+          $(".nav").toggleClass("showing");
+          $(".nav ul").toggleClass("showing");
+        });
+  
+        // Slick Carousel
+        $(".post-wrapper").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          nextArrow: $(".next"),
+          prevArrow: $(".prev"),
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+  
+        // CKEditor
+        ClassicEditor
+          .create(document.querySelector("#bodyEditor"), {
+            toolbar: [
+              "heading",
+              "|",
+              "bold",
+              "italic",
+              "link",
+              "bulletedList",
+              "numberedList",
+              "blockQuote"
+            ],
+            heading: {
+              options: [
+                { model: "paragraph", title: "Paragraph", class: "ck-heading_paragraph" },
+                {
+                  model: "heading1",
+                  view: "h1",
+                  title: "Heading 1",
+                  class: "ck-heading_heading1"
+                },
+                {
+                  model: "heading2",
+                  view: "h2",
+                  title: "Heading 2",
+                  class: "ck-heading_heading2"
+                }
+              ]
+            }
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      });
+    </script>
+  
+  </body>
+
+
+
+  
