@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>The Sunlight VARIETY</title>
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
+    integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Candal|Lora" rel="stylesheet">
+
+  <!-- Custom Styling -->
+  <link rel="stylesheet" href="blogstyle.css">
+
+  <!-- Slick Carousel CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+  <!-- Slick Carousel Theme CSS -->
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+          <h1 class="logo-text"><span>THE SUNLIGHT</span>VARIETY</h1>
+        </div>
+        <i class="fa fa-bars menu-toggle"></i>
+        <ul class="nav">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+        </ul>
+    </header>
+
+
+    <div class='story'>
+
+      <img src='logo.png' class='logo-img'>
+      <h3 class='byline'>Kevin Ramirez</h3>
+        <h1 class = 'blog-title'>kafka on The Shore: A Confused Review</h1>
+
+
+        <h2>“Sometimes, fate is like a small sandstorm that keeps changing directions” ~<i>Crow</i></h2>
+        <p>Just like fate, my understanding of the story is as consistent as Terry Goodkind being a good author. I have only read half of the book, and i am both confused and yet entertained. Lets see why.</p>
+
+        <p>The story starts off in an interesting way. The main character of the story is stealing things from his father. But not in a way some might think. He's stealing it because he was running away. Okay it might be in a way that people think.</p>
+
+        <p>He planned this. A plan that was years in the making. The why of it, i wont tell fully, since for one i dont quite remember the detials, and on the other, its best you read it for yourself. Its a good book, and I dont want to ruin it for you.</p>
+
+        <p>The boy had had enoug. He was sixteen. He lost his mother. His sister is in the wind. Knowing not of her fate, or even where she is. His father is of the absent one. The man drinks his life away. And the boy, the main character of our story, is talking to an imaginary crow. The quote above is from said Crow, and whether or not the Crow is really <i>real</i>, or simply a figment of the boys imagination is a mystery to me and you.</p>
+
+        <p>The Crow acted as the substitude parent/guide of sorts. He is there when the boy needs him. When he needs guidance, and the Crow answers with his wisdom. And basing my prior understanding(thought i might be wrong since i havent finished the book yet) the Crows wisdom comes from the dark recesses of the boys mind due to his large accumulation of his knowledge form the stacks of books he has read. Wow that was a mouthful. Enough Jungian subconcious talk, freud if you prefer, and lets back to the story.</p>
+
+        <p>Im going on for too long writing this so ill cut it short. The boy meets a semi adult woman, which he met after running away. He took the bus by the way. The young woman offered to shelter him for a day, and the boy agreed. Some <i>things</i> happened in that room between the two, and i wont get into it. Best to read it yourself. </p>
+
+        <p>They eventually part, with the boy still thinking of her even after the whole thing. But the author takes the story to an interesting turn. We meet the other character of the story. Both told from the old mans past and future. Narrating whatever happened to him during World War 2 and its strange happenings in their village. And narrating the eventuality of him in his old age. He is mentally stunted. Having a mind of a child. Living off from the stipends of the Mayor. He is happy with it. Content with it. Until things took a strange turn, when i learned he can talk to cats. Leading him down a path he never wanted, not expected.</p>
+
+        <p>The story is strange. Talking cats. Preschool students passing out in a forest in mass in world war 2. Fish falling from the sky. Other things faling from the sky which in turns injures some people. The MC being splattered with blood from the uknown. Yet it is also deep. The rapidness of a youth maturing as he is left alone in an unforgiving and uknown world. The decisions he has to make in order to survive. The poeple he meets that help him survive. As well as the fear of the uknown future that grips both the old man and the boy. Two people in complete contrast of their age, the gap between them decades in terms of age, and thousands of kilometers in distance.</p>
+
+        <p>Yet their fates still intertwine either way. Oh what does the future hold for the two. Only fate will know.</p>
+
+        <img src = 'image_8.png' class = image >
+        <h2>“That things in life are fated by our previous lives. That even in the smallest events theres no such thing as coincidence.”</h2>>  
+    </div>
+
+    <!-- // Page Wrapper -->
+
+
+
+
+  
+  
+    <!-- Simple JS animations -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="https://cdn.ckeditor.com/ckeditor5/40.0.1/classic/ckeditor.js"></script>
+  
+    <script>
+      $(document).ready(function () {
+        // Toggle menu
+        $(".menu-toggle").on("click", function () {
+          $(".nav").toggleClass("showing");
+          $(".nav ul").toggleClass("showing");
+        });
+  
+        // Slick Carousel
+        $(".post-wrapper").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 2000,
+          nextArrow: $(".next"),
+          prevArrow: $(".prev"),
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 3,
+                slidesToScroll: 3,
+                infinite: true,
+                dots: true
+              }
+            },
+            {
+              breakpoint: 600,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2
+              }
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                slidesToScroll: 1
+              }
+            }
+          ]
+        });
+  
+        // CKEditor
+        ClassicEditor
+          .create(document.querySelector("#bodyEditor"), {
+            toolbar: [
+              "heading",
+              "|",
+              "bold",
+              "italic",
+              "link",
+              "bulletedList",
+              "numberedList",
+              "blockQuote"
+            ],
+            heading: {
+              options: [
+                { model: "paragraph", title: "Paragraph", class: "ck-heading_paragraph" },
+                {
+                  model: "heading1",
+                  view: "h1",
+                  title: "Heading 1",
+                  class: "ck-heading_heading1"
+                },
+                {
+                  model: "heading2",
+                  view: "h2",
+                  title: "Heading 2",
+                  class: "ck-heading_heading2"
+                }
+              ]
+            }
+          })
+          .catch(error => {
+            console.log(error);
+          });
+      });
+    </script>
+  
+  </body>
+
+
+
+  
