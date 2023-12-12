@@ -7,7 +7,7 @@ body {
   height: 100%;
   padding: 0px;
   margin: 0px;
-  background: #FFFFFF;
+  background: white;
   font-family: 'Lora', serif;
 }
 
@@ -33,6 +33,13 @@ a {
   clear: both;
 }
 
+.bg-img {
+  background-image: url('index_bg.png');
+  background-size: cover;
+  background-position: center;
+  height: 65%;
+  width: auto;
+}
 .btn {
   padding: .5rem 1rem;
   background: #006669;
@@ -57,8 +64,8 @@ a {
 /* NAVBAR */
 
 header {
-  background: #FFE87C;
-  height: 66px;
+  background: black;
+  height: 70px;
 }
 
 header * {
@@ -68,13 +75,14 @@ header * {
 header .logo {
   float: left;
   height: inherit;
-  margin-left: 2em;
+  margin-left: 5em;
 }
 
 header .logo-text {
-  margin: 9px;
+  margin: 0px;
   font-family: 'Candal', serif;
-  color: #002147;
+  font-size: 45px;
+  color:#005255;
 }
 
 header .logo-text span {
@@ -86,16 +94,18 @@ header ul {
   margin: 0px;
   padding: 0px;
   list-style: none;
+  margin-right: 5em;
 }
 
 header ul li {
   float: left;
   position: relative;
+  margin-right: 2em;
 }
+
 
 header ul li ul {
   position: absolute;
-  top: 66px;
   right: 0px;
   width: 180px;
   display: none;
@@ -130,7 +140,7 @@ header ul li a {
 
 header ul li a:hover {
   background: #006669;
-  transition: 0.5s;
+  transition: 0.2s;
 }
 
 header .menu-toggle {
@@ -341,43 +351,18 @@ header .menu-toggle {
   transition: all 0.3s;
 }
 
-/* AUTH PAGES */
-
-.auth-content {
-  width: 30%;
-  margin: 50px auto;
-  padding: 20px;
-  background: white;
-  border-radius: 5px;
-}
-
-.auth-content .form-title {
-  text-align: center;
-}
-
-.auth-content form div {
-  margin-bottom: 10px;
-}
-
-.auth-content form p {
-  text-align: center;
-}
-
-.auth-content form p a {
-  text-decoration: underline;
-}
 
 /* FOOTER */
 
 .footer {
   background: #303036;
   color: #d3d3d3;
-  height: 400px;
+  height: 350px;
   position: relative;
 }
 
 .footer .footer-content {
-  height: 350px;
+  height: 350x;
   display: flex;
 }
 
