@@ -7,7 +7,7 @@ body {
   height: 100%;
   padding: 0px;
   margin: 0px;
-  background: #899db0 ;
+  background: #FFFFFF;
   font-family: 'Lora', serif;
 }
 
@@ -57,7 +57,7 @@ a {
 /* NAVBAR */
 
 header {
-  background: #52b2cf;
+  background: #FFE87C;
   height: 66px;
 }
 
@@ -74,10 +74,11 @@ header .logo {
 header .logo-text {
   margin: 9px;
   font-family: 'Candal', serif;
+  color: #002147;
 }
 
 header .logo-text span {
-  color: #0f4e50;
+  color: #FFFFFF;
 }
 
 header ul {
